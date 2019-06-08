@@ -12,7 +12,7 @@ export const onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
     xfbml = true,
   } = pluginOptions
 
-  const sdkFile = debug === true ? `sdk/debug.js` : `sdk.js`
+  const sdkFile = debug === true ? `sdk/debug.js` : `sdk/xfbml.customerchat.js`
 
   if (process.env.NODE_ENV === `production` || includeInDevelopment || debug) {
     setPostBodyComponents([
